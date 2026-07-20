@@ -202,26 +202,32 @@ body{
 
 /* ===== PAGE 6 — architecture diagram ===== */
 .arch{ position:relative; padding-top:6pt; }
+.arch-stack{ width:290pt; margin-left:150pt; margin-right:auto; }
 .node{ border:2.5pt solid var(--c,#194ad4); border-radius:12pt; background:#fff; padding:9pt 12pt; }
 .node .nt{ text-align:center; font-weight:700; font-size:10.5pt; color:var(--ink); }
 .node .fw{ margin-top:6pt; }
-.arch-user{ width:300pt; margin:0 auto; }
+.arch-user{ width:250pt; margin:0 auto; }
 .arch-user .fw textarea{ min-height:14pt; }
-.arch-mid{ position:relative; width:340pt; margin:14pt auto 0; }
-.agent-box{ background:var(--navy); border-radius:14pt; padding:12pt; margin:0; width:340pt; }
+.arch-mid{ position:relative; width:290pt; margin:0 auto; }
+.agent-box{ background:var(--navy); border-radius:14pt; padding:12pt; margin:0; width:290pt; }
 .agent-box .at{ text-align:center; color:#fff; font-weight:700; font-size:13pt; margin-bottom:8pt; }
-.agent-inner{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:12pt; direction:ltr; }
-.acell{ border:2pt solid var(--c); border-radius:9pt; background:#fff; padding:7pt; }
-.acell .ct{ text-align:center; font-weight:700; font-size:8.3pt; color:var(--ink); }
-.acell .cl{ text-align:center; font-size:7pt; color:var(--muted); font-family:var(--lat); }
+.agent-inner{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:9pt; direction:ltr; }
+.acell{ border:2pt solid var(--c); border-radius:9pt; background:#fff; padding:6pt 5pt; }
+.acell .ct{ text-align:center; font-weight:700; font-size:8pt; color:var(--ink); }
+.acell .cl{ text-align:center; font-size:6.5pt; color:var(--muted); font-family:var(--lat); }
 .acell .fw{ margin-top:5pt; }
-.acell .fw textarea{ min-height:52pt; }
-.datasrc{ position:absolute; top:50%; right:100%; margin-right:10pt; transform:translateY(-50%); width:108pt; }
+.acell .fw textarea{ min-height:50pt; }
+.datasrc{ position:absolute; top:50%; right:100%; margin-right:28pt; transform:translateY(-50%); width:128pt; }
 .datasrc .fw textarea{ min-height:52pt; }
-.arch-out{ width:100%; margin:14pt auto 0; }
+.arch-out{ width:290pt; margin:0 auto; }
 .arch-out .fw textarea{ min-height:14pt; }
-.connector{ width:3pt; height:22pt; background:var(--blue); margin:0 auto; }
-.connector.dot::after{ content:""; display:block; width:9pt; height:9pt; border-radius:50%; background:var(--blue); margin:0 auto; }
+/* connectors */
+.vconn{ display:flex; flex-direction:column; align-items:center; }
+.vconn .d{ width:11pt; height:11pt; border-radius:50%; background:#2563d6; }
+.vconn .l{ width:3.5pt; height:28pt; background:#2563d6; margin-top:-1pt; }
+.hconn{ position:absolute; top:50%; right:100%; transform:translateY(-50%); width:28pt; display:flex; align-items:center; }
+.hconn .l{ flex:1; height:3.5pt; background:var(--teal); }
+.hconn .d{ width:11pt; height:11pt; border-radius:50%; background:var(--teal); flex:0 0 auto; }
 
 /* ===== PAGE 7 — data flow columns ===== */
 .flow4{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12pt; }

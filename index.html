@@ -238,31 +238,34 @@
   <div class="body">
     <p class="intro">ارسموا رحلة الطلب: من المستخدم، عبر الوكيل ومصادره، إلى المخرَج النهائي.</p>
     <div class="arch">
-      <div class="node arch-user" style="--c:#194ad4">
-        <div class="nt">المستخدم</div>
-        <div class="fw"><textarea data-f="f_43" style="--h:14pt"></textarea></div>
-      </div>
-      <div class="connector dot"></div>
+      <div class="arch-stack">
+        <div class="node arch-user" style="--c:#194ad4">
+          <div class="nt">المستخدم</div>
+          <div class="fw"><textarea data-f="f_43" style="--h:14pt"></textarea></div>
+        </div>
+        <div class="vconn"><span class="d"></span><span class="l"></span></div>
 
-      <div class="arch-mid">
-        <div class="agent-box">
-          <div class="at">الوكيل الذكي</div>
-          <div class="agent-inner">
-            <div class="acell" style="--c:#3fd9ce"><div class="ct">الذاكرة</div><div class="cl">Memory</div><div class="fw"><textarea data-f="f_46"></textarea></div></div>
-            <div class="acell" style="--c:#3fd9ce"><div class="ct">الأدوات</div><div class="cl">Tools</div><div class="fw"><textarea data-f="f_45"></textarea></div></div>
-            <div class="acell" style="--c:#4fa8f0"><div class="ct">العقل</div><div class="cl">LLM</div><div class="fw"><textarea data-f="f_44"></textarea></div></div>
+        <div class="arch-mid">
+          <div class="agent-box">
+            <div class="at">الوكيل الذكي</div>
+            <div class="agent-inner">
+              <div class="acell" style="--c:#3fd9ce"><div class="ct">الذاكرة</div><div class="cl">Memory</div><div class="fw"><textarea data-f="f_46"></textarea></div></div>
+              <div class="acell" style="--c:#3fd9ce"><div class="ct">الأدوات</div><div class="cl">Tools</div><div class="fw"><textarea data-f="f_45"></textarea></div></div>
+              <div class="acell" style="--c:#4fa8f0"><div class="ct">العقل</div><div class="cl">LLM</div><div class="fw"><textarea data-f="f_44"></textarea></div></div>
+            </div>
           </div>
+          <div class="node datasrc" style="--c:#3fd9ce">
+            <div class="nt">مصادر البيانات</div>
+            <div class="fw"><textarea data-f="f_47"></textarea></div>
+          </div>
+          <div class="hconn"><span class="l"></span><span class="d"></span></div>
         </div>
-        <div class="node datasrc" style="--c:#3fd9ce">
-          <div class="nt">مصادر البيانات</div>
-          <div class="fw"><textarea data-f="f_47"></textarea></div>
-        </div>
-      </div>
 
-      <div class="connector dot"></div>
-      <div class="node arch-out" style="--c:#4fa8f0">
-        <div class="nt">المخرَج / الإجراء النهائي</div>
-        <div class="fw"><textarea data-f="f_48" style="--h:14pt"></textarea></div>
+        <div class="vconn"><span class="d"></span><span class="l"></span></div>
+        <div class="node arch-out" style="--c:#4fa8f0">
+          <div class="nt">المخرَج / الإجراء النهائي</div>
+          <div class="fw"><textarea data-f="f_48" style="--h:14pt"></textarea></div>
+        </div>
       </div>
 
       <div class="hint-blue" style="margin-top:14pt">آلية اتخاذ القرار: متى يتصرّف الوكيل ذاتياً؟ ومتى يعود للإنسان؟</div>
