@@ -171,7 +171,7 @@ body{
 .vote-row{ display:grid; grid-template-columns:minmax(0,1fr) 118pt; gap:14pt; margin-bottom:10pt; }
 .vote-labels{ display:grid; grid-template-columns:minmax(0,1fr) 118pt; gap:14pt; }
 .vote-labels span{ text-align:center; font-size:7.5pt; color:var(--muted); }
-.matrix-wrap{ display:grid; grid-template-columns:1fr 236pt; gap:14pt; align-items:stretch; }
+.matrix-wrap{ display:grid; grid-template-columns:1fr 1fr; gap:14pt; align-items:stretch; }
 .matrix{ display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:12pt; }
 .mcell{ border:2pt solid var(--c); border-radius:10pt; padding:8pt; background:#fff; display:flex; flex-direction:column; }
 .mcell .t{ text-align:center; font-size:8pt; font-weight:600; color:var(--ink); }
@@ -185,7 +185,7 @@ body{
 .chosen .fw textarea{ height:100%; min-height:150pt; }
 .axis-impact{ writing-mode:vertical-rl; text-align:center; font-size:9pt; color:var(--muted); }
 .axis-effort{ text-align:center; font-size:9pt; color:var(--muted); margin-top:6pt; }
-.matrix-row{ display:grid; grid-template-columns:14pt 1fr; gap:4pt; }
+.matrix-row{ display:grid; grid-template-columns:14pt 1fr; gap:4pt; direction:ltr; }
 
 /* ===== PAGE 4 — loop pills ===== */
 .pill{ border-radius:8pt; color:#fff; text-align:center; font-weight:700;
@@ -210,7 +210,7 @@ body{
 .arch-mid{ position:relative; width:340pt; margin:14pt auto 0; }
 .agent-box{ background:var(--navy); border-radius:14pt; padding:12pt; margin:0; width:340pt; }
 .agent-box .at{ text-align:center; color:#fff; font-weight:700; font-size:13pt; margin-bottom:8pt; }
-.agent-inner{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:12pt; }
+.agent-inner{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:12pt; direction:ltr; }
 .acell{ border:2pt solid var(--c); border-radius:9pt; background:#fff; padding:7pt; }
 .acell .ct{ text-align:center; font-weight:700; font-size:8.3pt; color:var(--ink); }
 .acell .cl{ text-align:center; font-size:7pt; color:var(--muted); font-family:var(--lat); }
